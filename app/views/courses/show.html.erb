@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @course.Title %>
+</p>
+
+<p>
+  <strong>Instructor:</strong>
+  <%= @course.Instructor %>
+</p>
+
+<p>
+  <strong>Semester:</strong>
+  <%= @course.Semester %>
+</p>
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %> |
+<%= link_to 'Delete', @course, method: :delete, data: { confirm: 'Are you sure?' } %>
